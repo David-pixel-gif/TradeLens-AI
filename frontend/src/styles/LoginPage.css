@@ -1,0 +1,82 @@
+/* 🔹 Animated background */
+.animated-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77, #778da9);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  z-index: 0;
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* 🔹 Floating stock tickers */
+.floating-stocks {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+  text-align: center;
+  color: #ffffffb3;
+  font-size: 0.9rem;
+  z-index: 2;
+  animation: tickerMove 20s linear infinite;
+}
+
+.floating-stocks span {
+  margin: 0 20px;
+}
+
+@keyframes tickerMove {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+/* 🔹 Glassmorphism card */
+.login-card {
+  max-width: 400px;
+  width: 100%;
+  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.login-card:hover {
+  box-shadow: 0 0 25px rgba(0, 123, 255, 0.4);
+  transform: translateY(-3px);
+}
+
+/* 🔹 Animated login button */
+.login-btn {
+  background: linear-gradient(45deg, #007bff, #00b4d8);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.login-btn:hover {
+  background: linear-gradient(45deg, #00b4d8, #007bff);
+  box-shadow: 0 0 15px rgba(0, 123, 255, 0.6);
+}
+
+.login-page-container {
+  position: relative;
+  overflow: hidden;
+}

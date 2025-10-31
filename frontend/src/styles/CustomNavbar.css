@@ -1,0 +1,11 @@
+.custom-navbar {
+  background: linear-gradient(to right, #002147, #0b294b);
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.nav-hover .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
