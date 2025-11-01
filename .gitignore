@@ -1,27 +1,72 @@
+# =======================================
+# 🚀 TradeLens-AI — Git Ignore Rules
+# =======================================
+
 # ===== Node / React =====
 frontend/node_modules/
 frontend/build/
+frontend/.env
+frontend/.next/
+frontend/dist/
+frontend/coverage/
 
 # ===== Python / Flask =====
 backend/__pycache__/
 backend/instance/
 backend/venv/
 backend/.env
+backend/*.pyc
+backend/*.pyo
+backend/*.pyd
+*.pyc
+*.pyo
+*.pyd
+
+# ===== Datasets and Large Files =====
+backend/datasets/
+*.csv
+*.zip
+*.tar
+*.gz
+*.jsonl
+*.pkl
+*.xlsx
+*.ipynb
+*.h5
+*.sav
 
 # ===== Environment Files =====
 .env
 *.env
+.env.*
+.env.local
+.env.production
+.env.development
 
-# ===== Logs and caches =====
+# ===== Logs and Caches =====
 *.log
-*.pyc
+*.out
+*.tmp
+*.bak
 __pycache__/
+.cache/
+pip-log.txt
 
-# ===== IDE & OS files =====
+# ===== IDE & OS Files =====
 .vscode/
 .idea/
 .DS_Store
 Thumbs.db
+*.swp
+*.swo
+
+# ===== Migrations & Databases =====
+backend/migrations/
+*.sqlite3
+*.db
 
 # ===== Misc =====
-*.sqlite3
+*.tgz
+*.lock
+*.pid
+*.orig
